@@ -21,13 +21,13 @@ int main(int argc, const char* argv[]) {
 
 
 	while (l < n && r < n) {               
-		if (sum < m) {               //rÀ» ÇÑÄ­ ÀÌµ¿ ÈÄ ´õÇØÁØ´Ù.
+		if (sum < m) {               //rì„ í•œì¹¸ ì´ë™ í›„ ë”í•´ì¤€ë‹¤.
 
 			sum += arr[++r];
 
 
 		}
-		else if (sum > m) {             // ¼ö¿­ÀÇ ¹üÀ§¸¦ ÁÙÀÎ´Ù. ¤ÓÀ» ÇÑÄ­ ÀÌµ¿
+		else if (sum > m) {             // ìˆ˜ì—´ì˜ ë²”ìœ„ë¥¼ ì¤„ì¸ë‹¤. ã…£ì„ í•œì¹¸ ì´ë™
 
 			sum -= arr[l++];
 			;
@@ -38,7 +38,7 @@ int main(int argc, const char* argv[]) {
 
 			}
 		}
-		else if (sum == m) {         //Ä«¿îÆ® +1
+		else if (sum == m) {         //ì¹´ìš´íŠ¸ +1
 			a++;
 
 			sum += arr[++r];
